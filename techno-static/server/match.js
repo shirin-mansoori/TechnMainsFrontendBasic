@@ -13,7 +13,7 @@ const matchSchema = mongoose.Schema({
     },
 
     room:{
-        type:String,
+        type:Number,
     },
 
     redPoint: {
@@ -29,13 +29,13 @@ const matchSchema = mongoose.Schema({
     },
 
     blueTime:{
-        type:Number
+        type:Number,
     },
     
     winner:{
-        type:Number
+        type:Number,
     }
 
 })
 
-module.exports = mongoose.model("matchs", matchSchema);
+module.exports = mongoose.model("matches", matchSchema);
